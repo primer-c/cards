@@ -1,0 +1,29 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app .container {
+  width: 340px;
+  padding: 15px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+}
+#app .container h3 {
+  text-align: center;
+}
+#app .container ul {
+  list-style: none;
+  padding: 0;
+}
+#app .container ul li {
+  margin: 10px auto;
+}
+#app .container ul li img {
+  width: 100%;
+}

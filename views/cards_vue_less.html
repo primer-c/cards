@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="..imgs/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/cards_vue_less.css" />
+    <script src="../js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <ul v-for="item in list">
+        <h2>{{item.title}}</h2>
+        <img :src="item.img" alt="" />
+        <li>{{item.content}}</li>
+        <li class="right">
+          Welcome to <a :href="item.link">{{item.title}}</a>
+        </li>
+      </ul>
+    </div>
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          list: [
+            {
+              title: "Bai Du",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://www.baidu.com",
+              img: "../imgs/photo-01.jpg",
+            },
+            {
+              title: "Jing Dong",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://www.jd.com",
+              img: "../imgs/photo-02.jpg",
+            },
+            {
+              title: "Tian Mao",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://www.tmall.com/",
+              img: "../imgs/photo-03.jpg",
+            },
+            {
+              title: "Tencent",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://qq.com",
+              img: "../imgs/photo-07.jpg",
+            },
+            {
+              title: "Hua Wei",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://huawei.com",
+              img: "../imgs/photo-04.jpg",
+            },
+            {
+              title: "Twittle",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://tweitel.com",
+              img: "../imgs/photo-05.jpg",
+            },
+            {
+              title: "Face Book",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://facebook",
+              img: "../imgs/photo-06.jpg",
+            },
+            {
+              title: "Amoze",
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "https://amoze.com",
+              img: "../imgs/photo-01.jpg",
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

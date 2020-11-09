@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of Vue</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container" v-for="item in list">
+        <h2>Hello World!</h2>
+        <img :src="item.img" alt="" />
+        <div class="content">{{item.content}}</div>
+        <p>
+          <span>Welcome to </span><a href="https://baidu.com">{{item.link}}</a>
+        </p>
+      </div>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          list: [
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Bai Du",
+              img: "../imgs/timg1.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Jing Dong",
+              img: "../imgs/timg2.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Tian Mao",
+              img: "../imgs/timg3.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Tencent",
+              img: "../imgs/timg6.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Hua Wei",
+              img: "../imgs/timg7.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Twitle",
+              img: "../imgs/timg4.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Face Book",
+              img: "../imgs/timg6.jpg",
+            },
+            {
+              content:
+                "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+              link: "Amoze",
+              img: "../imgs/timg1.jpg",
+            },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo of Vue</title>
+    <link rel="shortcut icon" href="../imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css" />
+    <script src="../js/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://baidu.com">{{baidu}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://jd.com">{{jd}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://tainmao.com">{{tm}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://tencent.com">{{tx}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://tweitel.com">{{tt}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p>
+          <span>Welcome to </span><a href="https://huawei.com">{{huawei}}</a>
+        </p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://facebook">{{face}}</a></p>
+      </div>
+      <div class="container">
+        <h2>Hello World!</h2>
+        <img src="../imgs/background.jpg" alt="" />
+        <div class="content">{{content}}</div>
+        <p><span>Welcome to </span><a href="https://amoze.com">{{amoze}}</a></p>
+      </div>
+    </div>
+
+    <script>
+      const app = new Vue({
+        el: "#app",
+        data: {
+          content:
+            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate, corrupti velit dignissimos ea totam?",
+          baidu: "Bai Du",
+          jd: "Jing Dong",
+          tm: "Tian Mao",
+          tx: "Tencent",
+          huawei: "Hua Wei",
+          tt: "Twitle",
+          face: "Face Book",
+          amoze: "Amoze",
+        },
+      });
+    </script>
+  </body>
+</html>
